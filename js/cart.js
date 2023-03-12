@@ -336,7 +336,7 @@ function confirmCart() {
     products: newProduct,
   };
 
-  fetch("http://localhost:3000/api/products/order", {
+  fetch("https://back-p5.vercel.app/api/products/order", {
     method: "POST",
     body: JSON.stringify(order),
     headers: { "Content-Type": "application/json" },
