@@ -18,7 +18,7 @@ async function getOneProduct() {
   const productId = new URL(location.href).searchParams.get("id");
   try {
     const response = await fetch(
-      `http://localhost:3000/api/products/${productId}`
+      `https://back-p5.vercel.app/api/products/${productId}`
     );
     const body = await response.json();
     return body;

@@ -100,7 +100,7 @@ async function checkProductLS() {
 async function displayProduct(productLS) {
   if (productLS.length > 0) {
     for (let item of productLS) {
-      fetch(`http://localhost:3000/api/products/${item.id}`)
+      fetch(`https://back-p5.vercel.app/api/products/${item.id}`)
         .then((data) => data.json())
         .then((product) => {
           // Création article

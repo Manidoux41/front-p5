@@ -1,11 +1,11 @@
 dataFetch();
 
-
+https://back-p5.vercel.app/api/products
 /************************************************************************************
  *                                         Async Functions
  ***********************************************************************************/
 async function dataFetch() {
-  let url = 'http://localhost:3000/api/products';
+  let url = 'https://back-p5.vercel.app/api/products';
 
  await fetch(url)
  .then(response => response.json())
